@@ -117,8 +117,8 @@
                     </div>
                 </div>
             </section>
-            <section class="whowe_section" id="who-we-are">
-                <div class="container">
+            <section class="whowe_section">
+                <div class="container" id="who-we-are">
                     <header class="text-center"><h1 class="font-bd text-uppercase">Who We Are</h1></header>
                     <div class="inner_section">
                         <div class="row">
@@ -239,6 +239,15 @@
         </footer>
         <style>
             .topheader .navbar .rightdiv ul li.search { margin-right: 0px;margin-left: 18px;}
+
+            #services-section::before, #who-we-are::before { 
+                display: block; 
+                content: " "; 
+                margin-top: -285px; 
+                height: 285px; 
+                visibility: hidden; 
+                pointer-events: none;
+            }
         </style>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
